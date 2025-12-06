@@ -1,0 +1,9 @@
+index,image_name,pred_lr,pred_sr
+0,report1_page001.png,restructive,assembles
+1,report1_page002.png,controller,newsgroups
+2,report1_page003.png,controller,newsgroups
+3,report1_page004.png,communication,the
+4,report1_page005.png,distribution,newsgroups
+5,report1_page006.png,computer,complained
+6,report1_page007.png,messageid,messageid
+7,report1_page008.png,presented,sender
