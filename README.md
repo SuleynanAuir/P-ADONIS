@@ -4,10 +4,9 @@
 *update 2025/11/20: Minghao Lee 
 (email: t330034027@mail.uic.edu.com)*
 
-
 ![produced by Nano Banana🍌 haha...](./P-ADON4PDF_icon.png)
 
-Let's See the Effect of our work.
+Check Fast: Let's See the Effect of our work.
 
 | LR 👉 SR PDF | Explanation |
 |---|---|
@@ -348,28 +347,12 @@ python run_eval_comparison.py --compare_models --rec="crnn" --batch_size=8
 
 ## 推荐阅读
 
-本项目的作者还发表了以下相关作品，推荐阅读：
+本项目的作者借鉴了相关作品，推荐阅读：
 
 - **[DPMN]** - 场景文本图像超分辨率的首项工作，已被 AAAI 2023 录用。[[论文]](https://arxiv.org/abs/2302.10414) [[代码]](https://github.com/jdfxzzy/DPMN)
 - **[GSDM]** - 文本图像修复的有趣工作，已被 AAAI 2024 录用。提出了使用结构预测模块和基于扩散的重建模块完成这项任务。[[论文]](https://arxiv.org/abs/2401.14832) [[代码]](https://github.com/blackprotoss/GSDM)
 
-## 引用
 
-如果本项目对你的研究有帮助，请引用以下论文：
-
-```bibtex
-@inproceedings{zhao2024pean,
-  title={{PEAN}: A Diffusion-Based Prior-Enhanced Attention Network for Scene Text Image Super-Resolution},
-  author={Zuoyan Zhao and Hui Xue and Pengfei Fang and Shipeng Zhu},
-  booktitle={Proceedings of the ACM International Conference on Multimedia},
-  pages={9769--9778},
-  year={2024},
-}
-```
-
-## 许可证
-
-本项目遵循原始 PEAN 项目的许可协议。详情请参考项目根目录的 LICENSE 文件。
 
 ---
 
