@@ -1398,9 +1398,11 @@ def main():
     ts = datetime.now().strftime('%Y%m%d_%H%M%S')
     out_root = _ensure_dir(os.path.join(args.out_dir, f'demo_{ts}'))
     img_dir = _ensure_dir(os.path.join(out_root, 'comparison'))
+    hr_dir = _ensure_dir(os.path.join(out_root, 'demo_single_HR'))  # 新增：单独保存HR图像的目录
     csv_path = os.path.join(out_root, 'demo_results.csv')
 
     print(f'\nOutput directory: {out_root}')
+    print(f'HR images will be saved to: {hr_dir}')
 
     # 创建 CSV 文件 (Demo: 只记录识别结果)
     with open(csv_path, 'w', newline='', encoding='utf-8') as f:
@@ -1557,6 +1559,13 @@ def main():
             elapsed_time = time.time() - start_time
             _save_comparison_grid_demo(lr_vis, sr_vis, img_name, pred_lr, pred_sr, grid_path, elapsed_time_s=elapsed_time)
             print(f'  - Saved comparison to {os.path.basename(grid_path)}')
+            
+            # 额外保存单独的 HR (SR) 图像到 demo_single_HR 文件夹
+            hr_path = os.path.join(hr_dir, f'{idx:02d}_{os.path.splitext(img_name)[0]}_HR.png')
+            sr_pil = transforms.ToPILImage()(sr_vis.cpu())
+            sr_pil.save(hr_path)
+            print(f'  - Saved HR image to {os.path.basename(hr_path)}')
+            
             print(f'  - Elapsed time: {elapsed_time:.1f}s')
             
             # 记录到 CSV (Demo: 只记录文本识别结果)
@@ -1578,6 +1587,7 @@ def main():
         print(f'Total Images: {len(jpeg_files)}')
         print(f'\nResults saved to: {out_root}')
         print(f'  - Comparison Images: {img_dir}')
+        print(f'  - HR Images (SR): {hr_dir}')
         print(f'  - Results CSV: {csv_path}')
         print('=' * 100)
 
