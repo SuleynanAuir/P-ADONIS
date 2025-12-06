@@ -11,7 +11,7 @@ Let's See the Effect of our work.
 
 | LR 👉 SR PDF | Explanation |
 |---|---|
-| ![](./demo_pdf_results/demo_20251206_003923/comparison/00_report1_page001_comparison.png) | Visualization of LR v.s. SR PDF and sample details are shown. Heatmap shows that the detail structure of chars are focused.|
+| ![](./demo_pdf_results/demo_20251206_165156/comparison/07_report1_page008_comparison.png) | Visualization of LR v.s. SR PDF and sample details are shown. Heatmap shows that the detail structure of chars are focused.|
 
 | Sample PDF Detail | Explanation |
 |---|---|
