@@ -1,0 +1,6 @@
+psnr_pean_mean: 26.71695
+psnr_swinir_mean: 22.673616666666664
+ssim_pean_mean: 0.8584701666666666
+ssim_swinir_mean: 0.6333421666666667
+psnr_delta_mean: 4.043349999999999
+ssim_delta_mean: 0.22512766666666664

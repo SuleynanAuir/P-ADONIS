@@ -1,0 +1,178 @@
+# ============================================================================
+# CWordClearer - Python Package Requirements
+# Generated from active pean environment on 2025-12-04
+# Python 3.8.20 | PyTorch 1.10.1+cu113 | CUDA 11.3
+# ============================================================================
+
+# CUDA 11.3 wheels for torch/torchvision
+-f https://download.pytorch.org/whl/cu113/torch_stable.html
+
+# ============================================================================
+# PyTorch and Deep Learning Frameworks
+# ============================================================================
+torch==1.10.1+cu113
+torchvision==0.11.2+cu113
+pytorch-lightning==1.5.10
+torchmetrics==1.5.2
+lightning-utilities==0.11.9
+
+# ============================================================================
+# Computer Vision and Image Processing
+# ============================================================================
+opencv-python==4.12.0.88
+pillow==10.4.0
+scikit-image==0.19.3
+imageio==2.35.1
+imgaug==0.4.0
+tifffile==2023.7.10
+
+# ============================================================================
+# Scientific Computing
+# ============================================================================
+numpy==1.24.4
+scipy==1.5.4
+matplotlib==3.3.4
+pandas==2.0.3
+
+# ============================================================================
+# Deep Learning Utilities (TPAN-E & SwinIR)
+# ============================================================================
+einops==0.8.1
+timm==0.6.5
+lpips==0.1.4
+pytorch-msssim==1.0.0
+pyiqa==0.1.7
+thop==0.1.1-2209072238
+pywavelets==1.4.1
+
+# ============================================================================
+# Text Processing and NLP
+# ============================================================================
+nltk==3.6.7
+ftfy==6.2.3
+regex==2024.11.6
+editdistance==0.6.0
+
+# ============================================================================
+# Experiment Tracking and Visualization
+# ============================================================================
+tensorboard==2.14.0
+tensorboard-data-server==0.7.2
+wandb==0.14.0
+
+# ============================================================================
+# Configuration and Data Management
+# ============================================================================
+omegaconf==2.1.1
+easydict==1.9
+pyyaml==6.0.3
+lmdb==1.3.0
+
+# ============================================================================
+# Utilities
+# ============================================================================
+tqdm==4.67.1
+click==8.1.8
+networkx==3.1
+
+# ============================================================================
+# Debugging and Development Tools
+# ============================================================================
+ipython==8.12.3
+pysnooper==1.2.3
+torchsnooper==0.8
+
+# ============================================================================
+# Core Dependencies (Auto-installed by above packages)
+# ============================================================================
+# ============================================================================
+# Core Dependencies (Auto-installed by above packages)
+# ============================================================================
+absl-py==2.3.1
+aiohappyeyeballs==2.4.4
+aiohttp==3.10.11
+aiosignal==1.3.1
+antlr4-python3-runtime==4.8
+appdirs==1.4.4
+asttokens==3.0.1
+async-timeout==5.0.1
+attrs==25.3.0
+backcall==0.2.0
+cachetools==5.5.2
+certifi==2025.11.12
+charset-normalizer==3.4.4
+colorama==0.4.6
+colour==0.1.5
+cycler==0.12.1
+decorator==5.2.1
+docker-pycreds==0.4.0
+executing==2.2.1
+frozenlist==1.5.0
+fsspec==2025.3.0
+future==1.0.0
+gitdb==4.0.12
+gitpython==3.1.45
+google-auth==2.43.0
+google-auth-oauthlib==1.0.0
+grpcio==1.70.0
+idna==3.11
+importlib-metadata==8.5.0
+jedi==0.19.2
+joblib==1.4.2
+jinja2==3.1.6
+kiwisolver==1.4.7
+markdown==3.7
+markupsafe==2.1.5
+matplotlib-inline==0.1.7
+multidict==6.1.0
+oauthlib==3.3.1
+packaging==25.0
+parso==0.8.5
+pathtools==0.1.2
+pickleshare==0.7.5
+prompt-toolkit==3.0.52
+propcache==0.2.0
+protobuf==4.25.8
+psutil==7.1.3
+pure-eval==0.2.3
+pyasn1==0.6.1
+pyasn1-modules==0.4.2
+pydeprecate==0.3.1
+pygments==2.19.2
+pyparsing==3.1.4
+python-dateutil==2.9.0.post0
+pytz==2025.2
+requests==2.32.4
+requests-oauthlib==2.0.0
+rsa==4.9.1
+sentry-sdk==2.44.0
+setproctitle==1.3.7
+shapely==2.0.7
+six==1.17.0
+smmap==5.0.2
+stack-data==0.6.3
+tomli==2.3.0
+traitlets==5.14.3
+typing-extensions==4.13.2
+tzdata==2025.2
+urllib3==2.2.3
+wcwidth==0.2.14
+werkzeug==3.0.6
+yarl==1.15.2
+zipp==3.20.2
+
+# ============================================================================
+# Installation Instructions:
+# ============================================================================
+# 1. Create conda environment:
+#    conda create -n cwordclearer python=3.8
+#    conda activate cwordclearer
+#
+# 2. Install all dependencies:
+#    pip install -r requirements.txt
+#
+# 3. Verify PyTorch CUDA:
+#    python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
+#
+# Note: Requires NVIDIA GPU with CUDA 11.3 compatible drivers (>=465.89)
+# ============================================================================
